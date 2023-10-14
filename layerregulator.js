@@ -4,9 +4,7 @@ var height_track = document.getElementById("track-course");
 
 var percentage_7 = ($(height_track).height() / 100) * 7;
 
-$('.snap2').css({
-            'margin-top': percentage_7
-        });
+$('.snap2').css('margin-top', percentage_7+'px');
 
 $(window).scroll(function() {
 		var scrollPercent = 100 * $(this).scrollTop() / ($(height_track).height());

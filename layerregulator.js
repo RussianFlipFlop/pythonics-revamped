@@ -2,13 +2,17 @@
 var windowHeight = $(window).height();
 var height_track = document.getElementById("track-course");
 
+var percentage_7 = ($(height_track).height() / 100) * 7;
+
+$('.snap2').css({
+            'margin-top': percentage_7
+        });
 
 $(window).scroll(function() {
 		var scrollPercent = 100 * $(this).scrollTop() / ($(height_track).height());
     console.log(scrollPercent);
 
     if (scrollPercent < 3) {
-	    scroll(0, 400),
     		$('.lesson1-div').css({
             'z-index': 'auto'
         }),

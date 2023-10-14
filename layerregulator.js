@@ -2,13 +2,13 @@
 var windowHeight = $(window).height();
 var height_track = document.getElementById("track-course");
 
-var percentage_7 = ($(height_track).height() / 100) * 7;
-
-$('.snap2').css('margin-top', percentage_7+'px');
-
 $(window).scroll(function() {
-		var scrollPercent = 100 * $(this).scrollTop() / ($(height_track).height());
-    console.log(scrollPercent);
+	var scrollPercent = 100 * $(this).scrollTop() / ($(height_track).height());
+    	//console.log(scrollPercent);
+
+	var percentage_7 = ($(height_track).height() / 100) * 7;
+	$('.snap2').css('margin-top', percentage_7+'px');
+	console.log(percentage_7);
 
     if (scrollPercent < 3) {
     		$('.lesson1-div').css({

@@ -8,6 +8,7 @@ $(window).scroll(function() {
     console.log(scrollPercent);
 
     if (scrollPercent < 3) {
+	    scroll(0, 400),
     		$('.lesson1-div').css({
             'z-index': 'auto'
         }),

@@ -126,45 +126,4 @@ $("#lsn8-b").click(function() {
     }, timeout_wait);
 });
 
-$(document).ready( function() {
-    $("#border-animated").hide(); //hide your div initially
-    var top1Div = $("#snap").offset().top;
-    var top2Div = $("#snap2").offset().top;
-    var top3Div = $("#snap3").offset().top;
-    var top4Div = $("#snap4").offset().top;
-    var top5Div = $("#snap5").offset().top;
-    var top6Div = $("#snap6").offset().top;
-    var top7Div = $("#snap7").offset().top;
-    var top8Div = $("#snap8").offset().top;
-    var top9Div = $("#snap9").offset().top;
-    var top10Div = $("#snap10").offset().top;
-    var top11Div = $("#snap11").offset().top;
-    $(window).scroll(function() {
-        if($(window).scrollTop() > (top1Div - 10) && $(window).scrollTop() < (top1Div + 10)) { //scrolled past the other div?
-            $("#border-animated").show(); //reached the desired point -- show div
-        } else if ($(window).scrollTop() > (top2Div - 10) && $(window).scrollTop() < (top2Div + 10)) {
-        		$("#border-animated").show();
-        } else if ($(window).scrollTop() > (top3Div - 10) && $(window).scrollTop() < (top3Div + 10)) {
-        		$("#border-animated").show();
-        } else if ($(window).scrollTop() > (top4Div - 10) && $(window).scrollTop() < (top4Div + 10)) {
-        		$("#border-animated").show();
-        } else if ($(window).scrollTop() > (top5Div - 10) && $(window).scrollTop() < (top5Div + 10)) {
-        		$("#border-animated").show();
-        } else if ($(window).scrollTop() > (top6Div - 10) && $(window).scrollTop() < (top6Div + 10)) {
-        		$("#border-animated").show();
-        } else if ($(window).scrollTop() > (top7Div - 10) && $(window).scrollTop() < (top7Div + 10)) {
-        		$("#border-animated").show();
-        } else if ($(window).scrollTop() > (top8Div - 10) && $(window).scrollTop() < (top8Div + 10)) {
-        		$("#border-animated").show();
-        } else if ($(window).scrollTop() > (top9Div - 10) && $(window).scrollTop() < (top9Div + 10)) {
-        		$("#border-animated").show();
-        } else if ($(window).scrollTop() > (top10Div - 10) && $(window).scrollTop() < (top10Div + 10)) {
-        		$("#border-animated").show();
-        } else if ($(window).scrollTop() > (top11Div - 10) && $(window).scrollTop() < (top11Div + 10)) {
-        		$("#border-animated").show();
-        }
-        else {
-          	$("#border-animated").hide();
-        			}
-    });
-});
+
